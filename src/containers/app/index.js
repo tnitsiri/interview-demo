@@ -3,6 +3,8 @@ import { Route, Link } from 'react-router-dom'
 import Home from '../home'
 import About from '../about'
 import Books from '../books'
+import BooksAdd from '../books/add'
+import BooksEdit from '../books/edit'
 import { Layout, Menu } from 'antd';
 const { Header, Footer  } = Layout;
 const App = () => (
@@ -24,6 +26,8 @@ const App = () => (
       <Route exact path="/" component={Home} />
       <Route exact path="/about-us" component={About} />
       <Route exact path="/books" component={Books} />
+      <Route exact path="/books/add" component={BooksAdd} />
+      <Route exact path="/books/edit/:id" component={BooksEdit} />
     </main>
     <Footer style={{ textAlign: 'center' }}>
       Interview ©2018 Created by Promphat
